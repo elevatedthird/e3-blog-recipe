@@ -5,7 +5,7 @@
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://github.com/elevatedthird/e3-blog-recipe",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "drupal/core": "^10.4 || >=11.1",
     "drupal/pathauto": "^1.13"
