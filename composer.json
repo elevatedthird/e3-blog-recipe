@@ -1,5 +1,5 @@
 {
-  "name": "drupal/e3-blog-recipe",
+  "name": "elevatedthird/e3-blog-recipe",
   "type": "drupal-recipe",
   "description": "Contains a recipe for a simple blog using best practices.",
   "keywords": ["Drupal"],
