@@ -12,3 +12,5 @@ To use add the following to the "repositories" key in your composer.json file:
 ```
 
 Then run `composer require elevatedthird/e3-blog-recipe` to install the recipe.
+
+Then run `drush recipe /app/recipes/e3-blog-recipe -v` to apply the recipe
