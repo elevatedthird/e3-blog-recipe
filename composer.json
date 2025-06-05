@@ -1,0 +1,13 @@
+{
+  "name": "drupal/e3-blog-recipe",
+  "type": "drupal-recipe",
+  "description": "Contains a recipe for a simple blog using best practices.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/elevatedthird/e3-blog-recipe",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^10.4 || >=11.1",
+    "drupal/pathauto": "^1.13"
+  }
+}
