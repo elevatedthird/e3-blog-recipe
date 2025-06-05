@@ -1,0 +1,38 @@
+uuid: 9f9f3b1d-c7a0-44c2-84fa-8bfc0035baf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_author
+id: node.blog_author.default
+targetEntityType: node
+bundle: blog_author
+mode: default
+content:
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

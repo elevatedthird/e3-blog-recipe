@@ -1,0 +1,29 @@
+uuid: 1fa8452c-4d4c-4db6-a891-fb27c012ca88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.blog_author
+    - node.type.blog_post
+id: node.blog_post.field_author
+field_name: field_author
+entity_type: node
+bundle: blog_post
+label: Author
+description: "Select the author of this post.<br/>\r\nNew blog authors can be added <a href=\"/node/add/blog_author\" target=\"_blank\">here</a>."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog_author: blog_author
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

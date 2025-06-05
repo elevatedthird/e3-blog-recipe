@@ -1,0 +1,72 @@
+uuid: f9f24815-94cc-4b00-9742-7d63cbee016d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_author
+    - field.field.node.blog_post.field_blog_category
+    - field.field.node.blog_post.field_blog_tags
+    - field.field.node.blog_post.field_body
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_published_date
+    - node.type.blog_post
+  module:
+    - datetime
+    - text
+    - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  field_author:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_blog_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_blog_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_published_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'F j, Y'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

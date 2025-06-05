@@ -1,0 +1,25 @@
+uuid: 5354301e-2912-4719-ab7e-11c0f2ccbcdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduler
+third_party_settings:
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Blog Category'
+vid: blog_category
+description: 'Blog categories are broad and allow for user filtering of blog content.'
+weight: 0
+new_revision: false

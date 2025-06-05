@@ -1,0 +1,27 @@
+uuid: 32c93f32-9fc8-411a-8f35-59f754860d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.blog_tag
+id: taxonomy_term.blog_tag.default
+targetEntityType: taxonomy_term
+bundle: blog_tag
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  unpublish_on: true
+  unpublish_state: true

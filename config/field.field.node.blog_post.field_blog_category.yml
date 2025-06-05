@@ -1,0 +1,29 @@
+uuid: 34335530-0ca9-4675-87c1-3f35f6887079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_category
+    - node.type.blog_post
+    - taxonomy.vocabulary.blog_category
+id: node.blog_post.field_blog_category
+field_name: field_blog_category
+entity_type: node
+bundle: blog_post
+label: 'Blog Category'
+description: "Select the blog category this blog post belongs to.<br/>\r\nBlog categories are used for user filtering of blog posts on the main blog page and should be limited to a manageable amount.<br/>\r\nNew blog categories can be added <a href=\"/admin/structure/taxonomy/manage/blog_category/add\" target=\"_blank\">here</a>."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blog_category: blog_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
