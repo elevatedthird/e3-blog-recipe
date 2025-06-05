@@ -1,4 +1,4 @@
-# e3-blog-recipe
+# Elevated Third Blog Recipe
 Contains a recipe for a simple blog using best practices
 
 ## Usage
